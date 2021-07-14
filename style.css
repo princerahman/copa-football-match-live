@@ -1,0 +1,266 @@
+/* font import file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common css */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header css */
+.copa-america-head{
+    background-color: #3d34b8;
+    overflow: hidden;
+}
+.copa-america-header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.header-text{
+    color: white;
+    font-size: 64px;
+}
+.header-left button{
+    width: 168px;
+    height: 44px;
+    background-color: #c93b6f;
+    border: none;
+    transition: background-color 0.2s, border-radius 0.5s ;
+
+}
+.header-left button:hover{
+    background-color: #82d83c;
+    border-radius: 0px ;
+}
+
+.header-left button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.5s;
+}
+
+.head-img{
+    width: 556px;
+    height: 438px;
+    transition: transform 0.3s;
+}
+.header-right:hover img{
+    transform:scale(1.4,1.4) rotate(360deg) translate(-50px);
+   
+}
+
+/* player details */
+.player-details{
+    display: flex;
+    justify-content: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 27px;
+    column-gap: 30px;
+    margin-top: 70px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 60px rgba(156, 231, 15, 0.15);
+    cursor: pointer;
+    transition: box-shadow 0.25s;
+}
+.player:hover{
+    box-shadow:0px 1px 6px -2px black;
+    
+}
+.player-img img{
+    width: 300px;
+    height: 256px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+.player-info{
+    padding: 15px;
+}
+.player-info h3{
+    margin-top: 10px;
+    font-size: 28px;
+}
+.player-info p{
+    color: gray;
+}
+
+/* Highlights part */
+.highlights-left{
+    color: black;
+}
+.highlights-left h1{
+    font-size: 48px;
+}
+.highlights-left p{
+    color: gray;
+}
+.highlights-right:hover img{
+    transform:scale(1.1,1.1);
+   
+}
+
+/* vedio part */
+.final-match-container{
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgb(240, 240, 238);
+}
+.final-match-container h1{
+    font-size: 40px;
+    text-align: center;
+}
+.fa-arrow-circle-down{
+    font-size: 50px;
+    color: tomato;
+}
+.final-match-container p{
+    text-align: center;
+}
+.final-video{
+    width: 80%;
+    height:480px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/* fotter part */
+.footer-img img{
+    width: 400px;
+    height: 110px;
+    display: block;
+    margin: auto;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    margin: 10px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: rgb(204, 204, 204);
+    transition: background-color 0.25s;
+}
+.circle:hover{
+    background-color: gray;
+}
+
+.icon{
+    position: relative;
+    top: 4px;
+    left: 9px;
+    color: gray;
+    transition: color 0.25s;
+}
+.circle:hover i{
+    color: white;
+}
+.copyright{
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Responsive design part */
+
+ /* for mobile device */
+@media only screen and (max-width: 687px) {
+    
+    /* header part*/
+    .copa-america-header{
+        flex-direction: column;
+    }
+    .header-text{
+        font-size: 36px;
+    }
+    .header-left{
+        margin-left: 26px;
+    }
+    .header-left button{
+        margin-top: 30px;
+    }
+    .header-right{
+        margin-top: 40px;
+        margin-left: 26px;
+    }
+    .head-img{
+        width: 329px;
+        height: 259px;
+    }
+    /* player part*/
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* vedio part*/
+    .final-video{
+        height: 200px;
+    }
+    
+    
+    /* footer  */
+    .footer-img img{
+        width: 275px;
+        height: 96px;
+    }
+    .copyright{
+        margin-bottom: 150px;
+    }
+}
+
+
+/* -------------For tab ------------- */
+
+@media only screen and (min-width:688px ) and (max-width:991px) {
+    /*-- header section -- */
+    .header-text{
+        font-size: 40px;
+    }
+    .header-left{
+        margin-left: 15px;
+    }
+    .header-left button{
+        margin-top: 20px;
+    }
+    .head-img{
+        width: 329px;
+        height: 259px;
+    }
+    /*-- player details section -- */
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
+    /*--- final video---  */
+    .final-video{
+        height: 333px;
+    }
+    /* --latest matches -- */
+    .match{
+        flex-direction: column;
+    }
+    /* --footer -- */
+    .footer-img img{
+        width: 275px;
+        height: 96px;
+    }
+    .copyright{
+        margin-bottom: 150px;
+    }
+}
