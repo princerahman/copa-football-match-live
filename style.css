@@ -11,7 +11,7 @@ body{
 }
 
 /* header css */
-.copa-america-head{
+.copa-america-headpart{
     background-color: #3d34b8;
     overflow: hidden;
 }
@@ -25,14 +25,7 @@ body{
     color: white;
     font-size: 64px;
 }
-.header-left button{
-    width: 168px;
-    height: 44px;
-    background-color: #c93b6f;
-    border: none;
-    transition: background-color 0.2s, border-radius 0.5s ;
 
-}
 .header-left button:hover{
     background-color: #82d83c;
     border-radius: 0px ;
@@ -43,6 +36,14 @@ body{
     color: white;
     font-size: 16px;
     transition: color 0.5s;
+}
+.header-left button{
+    width: 168px;
+    height: 44px;
+    background-color: #c93b6f;
+    border: none;
+    transition: background-color 0.2s, border-radius 0.5s ;
+
 }
 
 .head-img{
@@ -73,11 +74,11 @@ body{
     overflow: hidden;
     margin-bottom: 50px;
     box-shadow: 0px 0px 60px rgba(156, 231, 15, 0.15);
-    cursor: pointer;
+    cursor:pointer;
     transition: box-shadow 0.25s;
 }
 .player:hover{
-    box-shadow:0px 1px 6px -2px black;
+    box-shadow:0px 10px 10px -2px rgb(139, 220, 235);
     
 }
 .player-img img{
@@ -104,6 +105,7 @@ body{
 }
 .highlights-left h1{
     font-size: 48px;
+    text-align: center;
 }
 .highlights-left p{
     color: gray;
@@ -116,8 +118,11 @@ body{
 /* vedio part */
 .final-match-container{
     margin-bottom: 40px;
-    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 40px;
     background-color: rgb(240, 240, 238);
+    border-radius: 50px;
 }
 .final-match-container h1{
     font-size: 40px;
